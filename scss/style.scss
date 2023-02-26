@@ -1,4 +1,8 @@
 $light-color:#f4f4f4;
+$font-stack:sans-serif;
+$primary-color:dark-blue;
+$secondary-color:orange;
+
 
 *{
     box-sizing: border-box;
@@ -7,5 +11,29 @@ $light-color:#f4f4f4;
 }
 body{
     background-color:$light-color;
-    font-family: sans-serif;
+    font-family:$font-stack;
+    line-height:1.6;
 }
+.showcase{
+    background-color: $primary-color;
+    color:red;
+    height:600px;
+
+}
+.buttons{
+    padding-top: 10px;
+}
+.button-login  {
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+   
+  }
+  .button-read  {
+    @extend .button-login;
+    background-color: red;
+
+  }
+ 
+

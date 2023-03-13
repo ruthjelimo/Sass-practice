@@ -1,0 +1,31 @@
+$light-color:#f4f4f4;
+$font-stack:sans-serif;
+$primary-color:red;
+$secondary-color:orange;
+
+
+$primary-color:aqua;
+
+// $primary-color:#0effff;
+//set text color based on bg;
+//the $color should have $ bfre since it is a var
+//if it is more lighter it should return black,hence return white
+@function set-text-color($color){
+    @if(lightness($color)>70){
+        @return #333;
+
+    }@else{
+        @return #fff;
+    }
+}
+
+//this comes changing links in style, after changing function here
+//using mixin
+
+//mixin is like a function but it doesnt return anything.
+//set bg and color
+
+@mixin set-background-color($color){
+    background-color: $color;
+    color:set-text-color($color)
+}

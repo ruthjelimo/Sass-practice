@@ -1,3 +1,14 @@
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.btn-secondary {
+  background-color: orange;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,13 +22,30 @@ body {
 }
 
 .showcase {
-  background-color: blue;
+  background-color: #e0ffff;
   height: 600px;
+  color: #333;
 }
 .showcase nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.showcase h1 {
+  padding-left: 7%;
+}
+.showcase ul {
+  display: flex;
+  list-style-type: none;
+}
+.showcase li {
+  padding: 15px;
+}
+.showcase li a:hover {
+  color: orange;
+}
+.showcase a {
+  color: #333;
 }
 
 .container {
@@ -28,4 +56,26 @@ body {
 
 image {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.showcase-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showcase-content img {
+  width: 50%;
+}
+.showcase-content h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.showcase-content p {
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */
